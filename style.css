@@ -1,0 +1,491 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+span {
+    color: #d4ff00; /* Neon Accent */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d4ff00;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 35px;
+    background: #d4ff00;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Programs Grid */
+.programs {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.programs h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #222;
+    padding: 40px;
+    border-radius: 10px;
+    border-bottom: 4px solid transparent;
+    transition: 0.4s;
+}
+
+.card:hover {
+    border-bottom: 4px solid #d4ff00;
+    transform: translateY(-10px);
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 80px 10%;
+    background-color: #000; /* Slightly darker than the rest for contrast */
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    /* This creates a 3-column layout that becomes 2 or 1 depending on screen size */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item {
+    overflow: hidden; /* Keeps the zoom effect inside the box */
+    border-radius: 8px;
+    height: 250px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the box without distortion */
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+/* Hover Effect: Modern Zoom */
+.gallery-item img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%); /* Optional: Start grayscale and go to color on hover */
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 80px 10%;
+    background-color: #111;
+    text-align: center;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.pricing-card {
+    background: #1a1a1a;
+    padding: 40px 30px;
+    border-radius: 15px;
+    width: 320px;
+    position: relative;
+    transition: 0.3s;
+    border: 1px solid #333;
+}
+
+.pricing-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #888;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.pricing-card ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #222;
+}
+
+.pricing-card ul li.disabled {
+    color: #555;
+    text-decoration: line-through;
+}
+
+/* Featured Card Highlights */
+.pricing-card.featured {
+    background: #222;
+    border: 2px solid #d4ff00;
+    transform: scale(1.05); /* Makes it slightly larger */
+}
+
+.badge {
+    background: #d4ff00;
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Buttons */
+.btn-outline {
+    display: block;
+    padding: 12px;
+    border: 2px solid #d4ff00;
+    color: #d4ff00;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: #d4ff00;
+    color: #000;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    padding: 60px 10% 20px;
+    border-top: 1px solid #222;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-box h3, .footer-box h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-box p {
+    color: #888;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 10px;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: #888;
+    transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+    color: #d4ff00;
+    padding-left: 5px;
+}
+
+/* Social Icons Placeholder */
+.social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #222;
+    color: #d4ff00;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #d4ff00;
+    color: #000;
+}
+
+/* Newsletter Form */
+.footer-form {
+    display: flex;
+}
+
+.footer-form input {
+    padding: 10px;
+    border: none;
+    background: #222;
+    color: #fff;
+    border-radius: 5px 0 0 5px;
+    width: 70%;
+}
+
+.footer-form button {
+    padding: 10px 15px;
+    border: none;
+    background: #d4ff00;
+    color: #000;
+    font-weight: bold;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Copyright Bottom Bar */
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #222;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 10%;
+    background-color: #000;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contact-form-container, .map-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactForm input, #contactForm textarea {
+    width: 100%;
+    padding: 15px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contactForm input:focus, #contactForm textarea:focus {
+    outline: none;
+    border-color: #d4ff00;
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #222;
+}
+
+.map-container iframe {
+    filter: grayscale(100%) invert(90%) contrast(90%); /* Makes the map look "Dark Mode" */
+}
+
+/* Join Now Section */
+.join-now {
+    padding: 100px 10%;
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
+                url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-attachment: fixed; /* Parallax effect */
+}
+
+.join-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.join-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.join-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.join-benefits {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.join-benefits li {
+    font-size: 1.1rem;
+    color: #d4ff00;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Glassmorphism Form Card */
+.join-form-card {
+    flex: 1;
+    min-width: 350px;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+#membershipForm input, #membershipForm select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#membershipForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.btn-primary.full-width {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.form-note {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 15px;
+    text-align: center;
+}

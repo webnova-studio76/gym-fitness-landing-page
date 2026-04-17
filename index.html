@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRON PULSE | Modern Gym</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">IRON <span>PULSE</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#pricing">Membership</a></li>
+            <li><a href="#join" class="btn-nav">Join Now</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>UNLEASH YOUR <span>LIMITLESS</span> POTENTIAL</h1>
+            <p>The ultimate fitness destination for those who refuse to settle.</p>
+            <a href="#programs" class="btn-primary">Get Started</a>
+        </div>
+    </section>
+
+    <section id="programs" class="programs">
+        <h2>OUR PROGRAMS</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Bodybuilding</h3>
+                <p>Modern equipment and expert coaching to help you gain mass.</p>
+            </div>
+            <div class="card">
+                <h3>Cardio Blast</h3>
+                <p>High-intensity interval training to shred fat and boost stamina.</p>
+            </div>
+            <div class="card">
+                <h3>Yoga & Flex</h3>
+                <p>Improve mobility and find your mental balance.</p>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="gallery">
+    <h2>OUR <span>GYM FLOOR</span></h2>
+    <div class="gallery-grid">
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=600&q=80" alt="Gym 1"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&q=80" alt="Gym 2"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gym 3"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gym 4"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=600&q=80" alt="Gym 5"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gym 6"></div>
+    </div>
+</section>
+<section id="pricing" class="pricing">
+    <h2>CHOOSE YOUR <span>PLAN</span></h2>
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <h3>BASIC</h3>
+            <div class="price">$29<span>/mo</span></div>
+            <ul>
+                <li>Access to gym floor</li>
+                <li>Locker room access</li>
+                <li>Free Wi-Fi</li>
+                <li class="disabled">Group Classes</li>
+                <li class="disabled">Personal Trainer</li>
+            </ul>
+            <a href="#" class="btn-outline">Select Plan</a>
+        </div>
+
+        <div class="pricing-card featured">
+            <div class="badge">MOST POPULAR</div>
+            <h3>PRO</h3>
+            <div class="price">$59<span>/mo</span></div>
+            <ul>
+                <li>Everything in Basic</li>
+                <li>All Group Classes</li>
+                <li>1 Guest Pass / month</li>
+                <li>Sauna & Steam Room</li>
+                <li class="disabled">Personal Trainer</li>
+            </ul>
+            <a href="#" class="btn-primary">Select Plan</a>
+        </div>
+
+        <div class="pricing-card">
+            <h3>ELITE</h3>
+            <div class="price">$99<span>/mo</span></div>
+            <ul>
+                <li>Everything in Pro</li>
+                <li>Personal Trainer (2 sessions)</li>
+                <li>Nutrition Coaching</li>
+                <li>Unlimited Guest Passes</li>
+                <li>Complimentary Drinks</li>
+            </ul>
+            <a href="#" class="btn-outline">Select Plan</a>
+        </div>
+    </div>
+</section>
+
+<section id="join" class="join-now">
+    <div class="join-container">
+        <div class="join-text">
+            <h2>START YOUR <span>JOURNEY</span> TODAY</h2>
+            <p>Fill out the form below and a fitness consultant will contact you within 24 hours to schedule your first session.</p>
+            <ul class="join-benefits">
+                <li>✓ Free Fitness Assessment</li>
+                <li>✓ No Joining Fees this Month</li>
+                <li>✓ 24/7 Gym Access</li>
+            </ul>
+        </div>
+
+        <div class="join-form-card">
+            <form id="membershipForm">
+                <div class="form-row">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+                
+                <label for="plan-select">Select Membership Plan:</label>
+                <select id="plan-select" required>
+                    <option value="" disabled selected>Choose a plan...</option>
+                    <option value="basic">Basic - $29/mo</option>
+                    <option value="pro">Pro - $59/mo</option>
+                    <option value="elite">Elite - $99/mo</option>
+                </select>
+
+                <button type="submit" class="btn-primary full-width">Claim My Membership</button>
+                <p class="form-note">By clicking, you agree to our Terms of Service.</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="contact">
+    <h2>GET IN <span>TOUCH</span></h2>
+    <div class="contact-container">
+        <div class="contact-form-container">
+            <form id="contactForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.984761005825!2d77.5920336750764!3d12.972851115548074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1711885000000!5m2!1sen!2sin" 
+                width="100%" 
+                height="350" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-box">
+            <h3>IRON <span>PULSE</span></h3>
+            <p>Pushing boundaries and building champions since 2010. Join the movement today.</p>
+            <div class="social-icons">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+                <a href="#">TW</a>
+                <a href="#">YT</a>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#pricing">Membership</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h4>Contact Us</h4>
+            <p>123 Fitness Ave, Muscle City</p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Email: info@ironpulse.com</p>
+        </div>
+
+        <div class="footer-box">
+            <h4>Newsletter</h4>
+            <p>Get fitness tips and gym updates.</p>
+            <form class="footer-form">
+                <input type="email" placeholder="Your Email">
+                <button type="submit">Go</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 WebNova Studio.All rights reserved. | Designed by RR Web Designers</p>
+    </div>
+</footer>
+
+</body>
+</html>
